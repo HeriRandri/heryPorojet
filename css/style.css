@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.vide_one{
+    grid-area: vide_one;
+}
+
+.main_header{
+    grid-area: main_header;
+}
+
+.vide_two{
+    grid-area: vide_two;
+}
+
+.container{
+  font-family: sans-serif;
+  margin: 0px 80px;
+  display: grid;
+  grid-template-areas: 
+  'vide _one main_header main_header main_header main_header main_header main_header main_header main_header main_header main_header main_header main_header main_header main_header main_header main_header vide_two';
+}
+
+.header_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .navbar{
+    display: flex;
+    list-style: none;
+    padding: 30px 20px;
+}
+
+.navbar li{
+    margin: 20px;
+}
+
+
+
+.sary{
+    grid-area: sary;
+}
+
+.titre_grand{
+    grid-area: grand_titre;
+    max-width: 350px;
+}
+
+.detail{
+    grid-area: detail;
+    max-width: 400px;
+}
+
+.aside_section{
+    grid-area: aside_sec;
+    max-width: 250px;
+    background-color: rgb(8, 10, 37);
+}
+
+.footer_one{
+    grid-area: footer_one;
+    max-width: 250px;
+    margin-top:50px ;
+}
+
+.imge_one{
+    display: flex;
+}
+
+.footer_two{
+    grid-area: footer_two;
+    max-width: 250px;  
+    margin-top:50px ; 
+}
+
+.footer_three{
+    grid-area: footer_three;
+    max-width: 250px;
+    margin-top:50px ;
+}
+
+.header{
+    display: grid;
+    grid-template-areas: 
+    'sary sary sary sary sary sary sary sary sary sary aside_sec aside_sec aside_sec aside_sec aside_sec'
+    'grand_titre grand_titre grand_titre grand_titre grand_titre detail detail detail detail detail aside_sec aside_sec aside_sec aside_sec aside_sec'
+    'footer_one footer_one footer_one footer_one footer_one footer_two footer_two footer_two footer_two footer_two footer_three footer_three footer_three footer_three footer_three'
+    ;
+}
+
+.line{
+    margin-left: 20px;
+    width: 200px;
+    height: 3px;
+    background: #2e2222;
+}
+
+.titre_aside{
+    margin: 10px;
+    color: rgb(131, 135, 30);
+}
+
+.detail_one_aside .titre_detail{
+    color: white;
+    margin: 30px;
+}
+
+.para_detail{
+    color: white;
+    margin: 20px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .img_back img{
+        width: 360px;
+    }
+    .aside_section{
+        grid-area: aside_sec;
+        max-width: 16   0px;
+        background-color: rgb(9, 22, 200);
+    }
+    .line{
+        margin-left: 20px;
+        width: 100px;
+        height: 3px;
+        background: #2e2222;
+    }
+    
+    
+}
