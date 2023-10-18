@@ -17,6 +17,7 @@
 }
 
 .container{
+  max-width: 1440px;
   font-family: sans-serif;
   margin: 0px 80px;
   display: grid;
@@ -36,8 +37,21 @@
     padding: 30px 20px;
 }
 
-.navbar li{
-    margin: 20px;
+.navbar li {
+    margin: 10px;
+    text-decoration: none;
+}
+
+li a{
+    color: #765f5f;
+    text-decoration: none;
+    display: inline-block;
+}
+
+li a:hover{
+    color: #c90909;
+    text-decoration: none;
+    display: inline-block;
 }
 
 
@@ -56,6 +70,17 @@
     max-width: 400px;
 }
 
+button{
+    width: 150px;
+    height: 45px;
+    text-transform: uppercase;
+    background-color: rgb(8, 10, 37);
+    outline: none;
+    color: white;
+    letter-spacing: 5px;
+    margin-top: 20px;
+} 
+
 .aside_section{
     grid-area: aside_sec;
     max-width: 250px;
@@ -64,7 +89,7 @@
 
 .footer_one{
     grid-area: footer_one;
-    max-width: 250px;
+    max-width: 350px;
     margin-top:50px ;
 }
 
@@ -74,7 +99,7 @@
 
 .footer_two{
     grid-area: footer_two;
-    max-width: 250px;  
+    max-width:350px;  
     margin-top:50px ; 
 }
 
@@ -82,6 +107,7 @@
     grid-area: footer_three;
     max-width: 250px;
     margin-top:50px ;
+    max-height: 00px;
 }
 
 .header{
@@ -115,15 +141,41 @@
     margin: 20px;
 }
 
+.detail_footer{
+    margin: 20px;
+}
 
-@media screen and (max-width:1100px) {
+.opeMe{
+    display: none;
+}
+
+.O1{color: #6f6868;}
+.detai_one{color:#6f6868; margin-top: 10px; line-height: 30px;}
+.titre_footer{font-weight: 600;}
+
+@media screen and (max-width:700px) {
+    .container{
+        display: flex;
+        position: relative;
+    }
+
+    .opeMe{
+        display: block;
+    }
+
+    .navigation .navbar{
+        display: none;
+    }
+    
     .img_back img{
-        width: 360px;
+        width: 350px;
     }
     .aside_section{
-        grid-area: aside_sec;
-        max-width: 16   0px;
-        background-color: rgb(9, 22, 200);
+        max-width: 550px;
+        position: absolute;
+        top: 400px;
+        left: 0;
+      /*  display: none;*/
     }
     .line{
         margin-left: 20px;
@@ -131,6 +183,37 @@
         height: 3px;
         background: #2e2222;
     }
-    
-    
+
+    .titre_grand{
+        font-size: 12px;
+        position: relative;
+        max-width: 200px;
+       /* bottom: 180px;*/
+    }
+
+    .detail{
+        position: relative;
+      /*  bottom: 180px;*/
+        font-size:12px;
+        max-width: 200px;
+        right: 50px;
+    }
+
+    button{
+        margin: 0;
+    }
+
+    .footer_one{
+        position: absolute;
+        top: 210%;
+    }
+
+    .footer_two{
+        position: absolute;
+        top: 250%;
+    }
+    .footer_three{
+        position: absolute;
+        top: 290%;
+    }
 }
